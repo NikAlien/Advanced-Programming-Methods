@@ -1,0 +1,4249 @@
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a is reference -> int
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a ref. for 22
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  }
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+Write into heap: a -> 30
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+v = 32
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+a is reference -> int
+ (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ (a ref. for 22;  (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+a ref. for 22
+ (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ (ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ForkStmt{  (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  }
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+ (a ref. for Look up v;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+a ref. for Look up v
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+3 -> 10
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+3 -> 10
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 11
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (2, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+3 -> 10
+
+
+Output:
+[10, 22]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+v = 32
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+2 -> 22
+3 -> 10
+
+
+Output:
+[10, 22]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 10
+
+
+Output:
+[10, 22]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 10
+
+
+Output:
+[10, 22]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 10
+
+
+Output:
+[10, 22, 32]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 14
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 10
+
+
+Output:
+[10, 22, 32, 10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+v is bool
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+v -> false
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+v = 2
+print(Look up v)
+
+
+Symbol Table:
+v -> false
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+
+
+Symbol Table:
+v -> false
+
+
+Heap Memory:
+
+
+Output:
+[false]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v is int
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v = 2
+print(Look up v)
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+varf is string
+ (varf = text.in;  (Opened Read File: Look up varf;  (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (varf = text.in;  (Opened Read File: Look up varf;  (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) ) ) 
+
+
+Symbol Table:
+varf -> 
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+varf = text.in
+ (Opened Read File: Look up varf;  (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) ) 
+
+
+Symbol Table:
+varf -> 
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (Opened Read File: Look up varf;  (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+Opened Read File: Look up varf
+ (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (varc is int;  (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+varc is int
+ (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (Read from Look up varf var varc;  (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+Read from Look up varf var varc
+ (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (print(Look up varc);  (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) ) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 15
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+print(Look up varc)
+ (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 15
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (Read from Look up varf var varc;  (print(Look up varc); Close File Look up varf) ) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 15
+
+
+Heap Memory:
+
+
+Output:
+[15]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+Read from Look up varf var varc
+ (print(Look up varc); Close File Look up varf) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 15
+
+
+Heap Memory:
+
+
+Output:
+[15]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+ (print(Look up varc); Close File Look up varf) 
+
+
+Symbol Table:
+varf -> text.in
+varc -> 20
+
+
+Heap Memory:
+
+
+Output:
+[15]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+print(Look up varc)
+Close File Look up varf
+
+
+Symbol Table:
+varf -> text.in
+varc -> 20
+
+
+Heap Memory:
+
+
+Output:
+[15]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+Close File Look up varf
+
+
+Symbol Table:
+varf -> text.in
+varc -> 20
+
+
+Heap Memory:
+
+
+Output:
+[15, 20]
+
+File Table:
+text.in -> java.io.BufferedReader@7d4ad565
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 4
+
+Execution Stack:
+
+
+Symbol Table:
+varf -> text.in
+varc -> 20
+
+
+Heap Memory:
+
+
+Output:
+[15, 20]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+v is bool
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+v -> false
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 12
+
+Execution Stack:
+v = 2
+print(Look up v)
+
+
+Symbol Table:
+v -> false
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v is int
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v = 2
+print(Look up v)
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+v is reference -> int
+ (v ref. for 20;  (a is reference -> reference -> int;  (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+ (v ref. for 20;  (a is reference -> reference -> int;  (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> (0, int)
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+v ref. for 20
+ (a is reference -> reference -> int;  (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) ) 
+
+
+Symbol Table:
+v -> (0, int)
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+ (a is reference -> reference -> int;  (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) ) 
+
+
+Symbol Table:
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+a is reference -> reference -> int
+ (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) 
+
+
+Symbol Table:
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+ (a ref. for Look up v;  (print(Look up v); print(Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+a ref. for Look up v
+ (print(Look up v); print(Look up a)) 
+
+
+Symbol Table:
+a -> (0, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+ (print(Look up v); print(Look up a)) 
+
+
+Symbol Table:
+a -> (2, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+2 -> (1, int)
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+print(Look up v)
+print(Look up a)
+
+
+Symbol Table:
+a -> (2, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+2 -> (1, int)
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+print(Look up a)
+
+
+Symbol Table:
+a -> (2, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+2 -> (1, int)
+
+
+Output:
+[(1, int)]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 5
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (2, reference -> int)
+v -> (1, int)
+
+
+Heap Memory:
+1 -> 20
+2 -> (1, int)
+
+
+Output:
+[(1, int), (2, reference -> int)]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a is reference -> int
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a ref. for 22
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  }
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+Write into heap: a -> 30
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+v = 32
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 10
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30, 32]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (3, int)
+v -> 32
+
+
+Heap Memory:
+3 -> 30
+
+
+Output:
+[10, 30, 32, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a is reference -> int
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a ref. for 22
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  }
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+Write into heap: a -> 30
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+v = 32
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a is reference -> int
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+a ref. for 22
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (0, int)
+v -> 10
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  }
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+Write into heap: a -> 30
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 22
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+v = 32
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 10
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+ (print(Look up v); print(Read from heap: Look up a)) 
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Look up v)
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+print(Read from heap: Look up a)
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 13
+
+Execution Stack:
+
+
+Symbol Table:
+a -> (1, int)
+v -> 32
+
+
+Heap Memory:
+1 -> 30
+
+
+Output:
+[10, 30, 32, 30]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v is int
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+ (v = 2; print(Look up v)) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+v = 2
+print(Look up v)
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 1
+
+Execution Stack:
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v is int
+ (v = 4;  (While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) ; print(Look up v)) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (v = 4;  (While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) ; print(Look up v)) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v = 4
+ (While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) ; print(Look up v)) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) ; print(Look up v)) 
+
+
+Symbol Table:
+v -> 4
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 4
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (print(Look up v); v = Look up v - 1) 
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 4
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+print(Look up v)
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 4
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 4
+
+
+Heap Memory:
+
+
+Output:
+[4]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 3
+
+
+Heap Memory:
+
+
+Output:
+[4]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (print(Look up v); v = Look up v - 1) 
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 3
+
+
+Heap Memory:
+
+
+Output:
+[4]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+print(Look up v)
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 3
+
+
+Heap Memory:
+
+
+Output:
+[4]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 3
+
+
+Heap Memory:
+
+
+Output:
+[4, 3]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[4, 3]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (print(Look up v); v = Look up v - 1) 
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[4, 3]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+print(Look up v)
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[4, 3]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 2
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 1
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+ (print(Look up v); v = Look up v - 1) 
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 1
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+print(Look up v)
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 1
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+v = Look up v - 1
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 1
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2, 1]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+While (Look up v > 0) do  (print(Look up v); v = Look up v - 1) 
+print(Look up v)
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2, 1]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+print(Look up v)
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2, 1]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 8
+
+Execution Stack:
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[4, 3, 2, 1, 0]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v is int
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+ (v = 10;  (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------
+
+
+---- PROGRAM STATE ----
+ Program Id -> 10
+
+Execution Stack:
+v = 10
+ (a is reference -> int;  (a ref. for 22;  (ForkStmt{  (Write into heap: a -> 30;  (v = 32;  (print(Look up v); print(Read from heap: Look up a)) ) )  };  (print(Look up v); print(Read from heap: Look up a)) ) ) ) 
+
+
+Symbol Table:
+v -> 0
+
+
+Heap Memory:
+
+
+Output:
+[]
+
+File Table:
+
+----------------------------------

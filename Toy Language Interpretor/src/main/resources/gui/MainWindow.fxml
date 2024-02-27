@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #eefbfb;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SelectController">
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" text="Choose an example:" textFill="#050532">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="commandsListView" prefWidth="450.0" style="-fx-background-color: #B7D3ED;" AnchorPane.leftAnchor="-10.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
