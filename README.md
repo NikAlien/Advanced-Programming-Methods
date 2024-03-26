@@ -6,3 +6,13 @@
 <img width="350" alt="Captură de ecran din 2024-03-26 la 08 14 55" src="https://github.com/NikAlien/Toy-Language-Interpretor/assets/115424518/112c4306-824b-4482-8ed4-d620024dd733">
 <img width="350" alt="Captură de ecran din 2024-03-26 la 08 15 52" src="https://github.com/NikAlien/Toy-Language-Interpretor/assets/115424518/7cdb56d1-e913-47e9-b097-b4e4f71d3b1d">
 </div>
+
+
+```diff
+## Currrently implemented:
++ GUI
++ Data Types: Integer, Boolean, String, Reference
++ Expressions: Arithmetic and Logical expressions, Read from Heap, etc.
++ Statements: Assignment, If, While, Fork, Print, etc.
++ Validations
+```
